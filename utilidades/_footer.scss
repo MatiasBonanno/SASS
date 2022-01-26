@@ -1,66 +1,93 @@
-    .medio {
-    margin: auto;
-    background-color: rgb(9, 55, 77);
-    color: white;
-    border: solid 7px black;
-  }
-  
+.medio {
+  margin: auto;
+  background-color: rgb(9, 55, 77);
+  color: white;
+  border: solid 7px black;
+}
+
+.pie {
+  display: grid;
+  margin: 0;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-columns: 250px 250px;
+  justify-content: space-evenly;
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 10px;
+  row-gap: 50px;
+  background-color: rgba(2, 0, 36, 1);
+  position: relative;
+}
+
+.pie {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "mediosPago"
+    "redes";
+}
+
+.mediosPago {
+  text-align: center;
+  height: 80%;
+  width: 90%;
+  margin-top: 8%;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #406882;
+  border: solid 3px black;
+  position: relative;
+  right: 10%;
+}
+
+.negrita {
+  font-weight: bold;
+  color: rgb(56, 161, 168);
+}
+.redes {
+  text-align: center;
+  display: inline-block;
+  height: 80%;
+  width: 90%;
+  background-color: #406882;
+  border: solid 3px black;
+  border-radius: 10px;
+  padding: 2px;
+  margin-bottom: 5px;
+  margin-top: 8%;
+  position: relative;
+  left: 10%;
+}
+
+footer img {
+  margin-top: 10px;
+}
+
+.cuadro {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border: solid 3px black;
+  overflow: visible;
+}
+
+// media query //
+
+@media screen and (max-width: 677px) {
   .pie {
-    display: grid;
-    margin: 0;
-    grid-auto-columns: 1fr 1fr;
-    grid-template-columns: 250px 250px;
-    justify-content: space-evenly;
-    align-content: stretch;
-    justify-items: stretch;
-    align-items: stretch;
-    gap: 10px;
-    row-gap: 50px;
-    background-color: rgba(2, 0, 36, 1);
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
-  
-  .mediosPago {
-    text-align: center;
-    height: 80%;
-    width: 90%;
-    margin-top: 8%;
-    border-radius: 10px;
-    padding: 8px;
-    margin-bottom: 5px;
-    background-color: #406882;
-    border: solid 3px black;
-    position: relative;
-    right: 10%;
-  }
-  
-  .negrita {
-    font-weight: bold;
-    color: rgb(56, 161, 168);
-  }
-  .redes {
-    text-align: center;
-    display: inline-block;
-    height: 80%;
-    width: 90%;
-    background-color: #406882;
-    border: solid 3px black;
-    border-radius: 10px;
-    padding: 2px;
-    margin-bottom: 5px;
-    margin-top: 8%;
-    position: relative;
-    left: 10%;
-  }
-  
-  footer img {
-    margin-top: 10px;
-  }
-  
-  .cuadro {
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    border: solid 3px black;
-    overflow: visible;
-  }
+}
+
+@media (min-width: 678px) and (max-width: 750px) {
+}
+.pie {
+  align-content: center;
+  justify-content: center;
+}

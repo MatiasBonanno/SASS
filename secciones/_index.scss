@@ -1,25 +1,34 @@
-
-header {
-  .container {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 30%,
-      rgba(3, 33, 60, 1) 100%
-    );
-  }
-}
-
 .container {
-    background-color: $color4;
-    min-width: 100vw;
-    margin-top: -10px;
-  }
+  background-color: $color4;
+  min-width: 100vw;
+  margin-top: -10px;
+}
 
 .centrado {
   text-align: center;
 }
 
+h1 {
+  color: $color1;
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.presentacion {
+  margin: 1.5%;
+  font-size: 1.1em;
+}
+
+.espacio {
+  margin-top: 3%;
+  text-decoration: overline #1e1e39;
+  font-style: serif;
+  font-size: 2.5em;
+  overflow: hidden;
+}
+
+// IMAGENES //
 .imagenes {
   display: grid;
   grid-template-columns: 1fr;
@@ -47,14 +56,14 @@ header {
 
 .imagenesA {
   grid: imagenesA;
-  border: #1a374d 2px solid;
+  border: $color4 2px solid;
   border-radius: 3%;
   margin: auto;
 }
 
 .imagenesB {
   grid: imagenesB;
-  border: #1a374d 2px solid;
+  border: $color4 2px solid;
   border-radius: 3%;
   margin: auto;
   margin-top: 1%;
@@ -62,7 +71,7 @@ header {
 
 .imagenesC {
   grid: imagenesC;
-  border: #1a374d 2px solid;
+  border: $color4 2px solid;
   border-radius: 3%;
   margin: auto;
   margin-top: 2%;
@@ -85,11 +94,11 @@ header {
   a {
     display: flex;
     align-self: center;
-    border: #1a374d 1px solid;
+    border: $color4 1px solid;
     width: 100px;
     height: 25px;
     border-radius: 5px;
-    background-color: #1a374d;
+    background-color: $color4;
     color: white;
     text-decoration: none;
     flex-direction: column;
@@ -102,9 +111,11 @@ header {
   }
 }
 
+// carrusel
+
 .carousel-item a {
   color: white;
-  background-color: #1e1e39;
+  background-color: $color3;
   text-decoration: none;
   &:hover {
     color: cadetblue;
@@ -118,7 +129,7 @@ header {
   align-items: center;
   margin: auto;
   p {
-    background-color: #1e1e39;
+    background-color: $color3;
     color: white;
   }
 }
@@ -169,4 +180,39 @@ header {
 .carousel-control-prev,
 .carousel-control-next {
   filter: invert(100%);
+}
+
+// media query
+
+@media screen and (max-width: 677px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .lanzamientos {
+    grid-template-areas:
+      "lanzamiento1 lanzamiento1"
+      "lanzamiento2 lanzamiento2"
+      "lanzamiento3 lanzamiento3"
+      "lanzamiento4 lanzamiento4";
+    align-items: center;
+  }
+}
+
+@media (min-width: 678px) and (max-width: 750px) {
+  header .container {
+    align-items: center;
+    grid-auto-rows: auto;
+    left: 0%;
+    right: 0%;
+  }
+
+  .lanzamientos {
+    grid-template-areas:
+      "lanzamiento1 lanzamiento1"
+      "lanzamiento2 lanzamiento2"
+      "lanzamiento3 lanzamiento3"
+      "lanzamiento4 lanzamiento4";
+    align-items: center;
+  }
 }

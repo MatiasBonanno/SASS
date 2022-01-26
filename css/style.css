@@ -16,10 +16,6 @@ header .container {
 .nav-item:hover {
   background-color: lightslategray; }
 
-header .container {
-  background: white;
-  background: linear-gradient(0deg, white 30%, #03213c 100%); }
-
 .container {
   background-color: #1a374d;
   min-width: 100vw;
@@ -27,6 +23,23 @@ header .container {
 
 .centrado {
   text-align: center; }
+
+h1 {
+  color: #120b3a;
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center; }
+
+.presentacion {
+  margin: 1.5%;
+  font-size: 1.1em; }
+
+.espacio {
+  margin-top: 3%;
+  text-decoration: overline #1e1e39;
+  font-style: serif;
+  font-size: 2.5em;
+  overflow: hidden; }
 
 .imagenes {
   display: grid;
@@ -155,6 +168,23 @@ header .container {
 .carousel-control-next {
   filter: invert(100%); }
 
+@media screen and (max-width: 677px) {
+  * {
+    overflow-x: hidden; }
+  .lanzamientos {
+    grid-template-areas: "lanzamiento1 lanzamiento1" "lanzamiento2 lanzamiento2" "lanzamiento3 lanzamiento3" "lanzamiento4 lanzamiento4";
+    align-items: center; } }
+
+@media (min-width: 678px) and (max-width: 750px) {
+  header .container {
+    align-items: center;
+    grid-auto-rows: auto;
+    left: 0%;
+    right: 0%; }
+  .lanzamientos {
+    grid-template-areas: "lanzamiento1 lanzamiento1" "lanzamiento2 lanzamiento2" "lanzamiento3 lanzamiento3" "lanzamiento4 lanzamiento4";
+    align-items: center; } }
+
 .medio {
   margin: auto;
   background-color: #09374d;
@@ -174,6 +204,12 @@ header .container {
   row-gap: 50px;
   background-color: #020024;
   position: relative; }
+
+.pie {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "mediosPago" "redes"; }
 
 .mediosPago {
   text-align: center;
@@ -215,6 +251,17 @@ footer img {
   margin: 10px;
   border: solid 3px black;
   overflow: visible; }
+
+@media screen and (max-width: 677px) {
+  .pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; } }
+
+.pie {
+  align-content: center;
+  justify-content: center; }
 
 * {
   margin: 0;
@@ -279,7 +326,7 @@ h1 {
 
 .imagenes img:hover {
   transform: scale(1.5);
-  transition: .5s; }
+  transition: 0.5s; }
 
 .imagenes h3 {
   background-color: #1e1e39;
@@ -526,8 +573,8 @@ footer img {
   text-align: center;
   background: 0 0;
   border: 0;
-  opacity: .5;
-  transition: opacity .15s ease;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center; }
@@ -546,8 +593,8 @@ footer img {
   text-align: center;
   background: 0 0;
   border: 0;
-  opacity: .5;
-  transition: opacity .15s ease;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
   flex-direction: row; }
 
 .carousel-control-prev,
