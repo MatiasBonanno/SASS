@@ -1,0 +1,172 @@
+
+header {
+  .container {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 30%,
+      rgba(3, 33, 60, 1) 100%
+    );
+  }
+}
+
+.container {
+    background-color: $color4;
+    min-width: 100vw;
+    margin-top: -10px;
+  }
+
+.centrado {
+  text-align: center;
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "imagenesA imagenesA imagenesA"
+    "imagenesB imagenesB imagenesB"
+    "imagenesC imagenesC imagenesC"
+    ". .";
+  justify-items: normal;
+  align-items: stretch;
+  justify-self: center;
+  align-self: center;
+  margin: 10px;
+  .img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+  }
+  h3 {
+    background-color: #1e1e39;
+    color: white;
+  }
+}
+
+.imagenesA {
+  grid: imagenesA;
+  border: #1a374d 2px solid;
+  border-radius: 3%;
+  margin: auto;
+}
+
+.imagenesB {
+  grid: imagenesB;
+  border: #1a374d 2px solid;
+  border-radius: 3%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.imagenesC {
+  grid: imagenesC;
+  border: #1a374d 2px solid;
+  border-radius: 3%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.lanzamientos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "lanzamiento1 lanzamiento2"
+    "lanzamiento3 lanzamiento4"
+    ". .";
+  justify-items: normal;
+  align-items: stretch;
+  justify-self: center;
+  align-self: center;
+  margin: 10px;
+  a {
+    display: flex;
+    align-self: center;
+    border: #1a374d 1px solid;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #1a374d;
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    margin: auto;
+    &:hover {
+      color: rgb(58, 166, 199);
+    }
+  }
+}
+
+.carousel-item a {
+  color: white;
+  background-color: #1e1e39;
+  text-decoration: none;
+  &:hover {
+    color: cadetblue;
+  }
+}
+
+.carousel-inner {
+  width: 75%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  p {
+    background-color: #1e1e39;
+    color: white;
+  }
+}
+
+.btn-group a {
+  background-color: #406882;
+}
+
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  flex-direction: row;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+}

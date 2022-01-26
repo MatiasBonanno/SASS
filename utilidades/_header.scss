@@ -1,0 +1,30 @@
+header {
+  .container {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 30%,
+      rgba(3, 33, 60, 1) 100%
+    );
+  }
+}
+
+.espacio {
+    margin-top: 3%;
+    text-decoration: overline #1e1e39;
+    font-style: serif;
+    font-size: 2.5em;
+    overflow: hidden;
+  }
+  
+  .presentacion {
+    margin: 1.5%;
+    font-size: 1.1em;
+  }
+
+  .nav-item {
+    &:hover {
+      background-color: lightslategray;
+    }
+  }
+  
