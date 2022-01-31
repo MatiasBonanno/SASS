@@ -24,6 +24,10 @@ header .container {
 .centrado {
   text-align: center; }
 
+.contenedor {
+  display: inline;
+  color: white; }
+
 h1 {
   color: #120b3a;
   font-size: 2rem;
@@ -33,6 +37,9 @@ h1 {
 .presentacion {
   margin: 1.5%;
   font-size: 1.1em; }
+
+p {
+  color: #09374d; }
 
 .espacio {
   margin-top: 3%;
@@ -144,7 +151,8 @@ h1 {
   transition: opacity 0.15s ease;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center; }
+  align-content: center;
+  filter: invert(100%); }
 
 .carousel-control-prev {
   position: absolute;
@@ -162,10 +170,7 @@ h1 {
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
-  flex-direction: row; }
-
-.carousel-control-prev,
-.carousel-control-next {
+  flex-direction: row;
   filter: invert(100%); }
 
 @media screen and (max-width: 677px) {
@@ -203,11 +208,7 @@ h1 {
   gap: 10px;
   row-gap: 50px;
   background-color: #020024;
-  position: relative; }
-
-.pie {
-  display: grid;
-  grid-template-columns: 1fr;
+  position: relative;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "mediosPago" "redes"; }
 
