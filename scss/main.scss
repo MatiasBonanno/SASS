@@ -1,7 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://img.freepik.com/vector-gratis/diseno-fondo-blanco-estilo-perspectiva-3d-forma-hexagonal_1017-27558.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
 
 @import '../variables/variables';
+
 // importaciones
-@import './utilidades/header';
+@import '../variables/cssviejo';
 @import '../secciones/index';
+@import './utilidades/header';
+@import './utilidades/main';
 @import '../utilidades/footer';
-@import '../variables/cssviejo'

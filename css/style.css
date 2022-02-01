@@ -1,269 +1,3 @@
-header .container {
-  background: white;
-  background: linear-gradient(0deg, white 30%, #03213c 100%); }
-
-.espacio {
-  margin-top: 3%;
-  text-decoration: overline #1e1e39;
-  font-style: serif;
-  font-size: 2.5em;
-  overflow: hidden; }
-
-.presentacion {
-  margin: 1.5%;
-  font-size: 1.1em; }
-
-.nav-item:hover {
-  background-color: lightslategray; }
-
-.container {
-  background-color: #1a374d;
-  min-width: 100vw;
-  margin-top: -10px; }
-
-.centrado {
-  text-align: center; }
-
-.contenedor {
-  display: inline;
-  color: white; }
-
-h1 {
-  color: #120b3a;
-  font-size: 2rem;
-  margin: 2rem;
-  text-align: center; }
-
-.presentacion {
-  margin: 1.5%;
-  font-size: 1.1em; }
-
-p {
-  color: #09374d; }
-
-.espacio {
-  margin-top: 3%;
-  text-decoration: overline #1e1e39;
-  font-style: serif;
-  font-size: 2.5em;
-  overflow: hidden; }
-
-.imagenes {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
-  grid-template-areas: "imagenesA imagenesA imagenesA" "imagenesB imagenesB imagenesB" "imagenesC imagenesC imagenesC" ". .";
-  justify-items: normal;
-  align-items: stretch;
-  justify-self: center;
-  align-self: center;
-  margin: 10px; }
-  .imagenes .img:hover {
-    transform: scale(1.5);
-    transition: 0.5s; }
-  .imagenes h3 {
-    background-color: #1e1e39;
-    color: white; }
-
-.imagenesA {
-  grid: imagenesA;
-  border: #1a374d 2px solid;
-  border-radius: 3%;
-  margin: auto; }
-
-.imagenesB {
-  grid: imagenesB;
-  border: #1a374d 2px solid;
-  border-radius: 3%;
-  margin: auto;
-  margin-top: 1%; }
-
-.imagenesC {
-  grid: imagenesC;
-  border: #1a374d 2px solid;
-  border-radius: 3%;
-  margin: auto;
-  margin-top: 2%; }
-
-.lanzamientos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  grid-template-areas: "lanzamiento1 lanzamiento2" "lanzamiento3 lanzamiento4" ". .";
-  justify-items: normal;
-  align-items: stretch;
-  justify-self: center;
-  align-self: center;
-  margin: 10px; }
-  .lanzamientos a {
-    display: flex;
-    align-self: center;
-    border: #1a374d 1px solid;
-    width: 100px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: #1a374d;
-    color: white;
-    text-decoration: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    margin: auto; }
-    .lanzamientos a:hover {
-      color: #3aa6c7; }
-
-.carousel-item a {
-  color: white;
-  background-color: #1e1e39;
-  text-decoration: none; }
-  .carousel-item a:hover {
-    color: cadetblue; }
-
-.carousel-inner {
-  width: 75%;
-  height: 30%;
-  justify-content: center;
-  align-items: center;
-  margin: auto; }
-  .carousel-inner p {
-    background-color: #1e1e39;
-    color: white; }
-
-.btn-group a {
-  background-color: #406882; }
-
-.carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: flex-start;
-  width: 15%;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  background: 0 0;
-  border: 0;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  filter: invert(100%); }
-
-.carousel-control-prev {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 15%;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  background: 0 0;
-  border: 0;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
-  flex-direction: row;
-  filter: invert(100%); }
-
-@media screen and (max-width: 677px) {
-  * {
-    overflow-x: hidden; }
-  .lanzamientos {
-    grid-template-areas: "lanzamiento1 lanzamiento1" "lanzamiento2 lanzamiento2" "lanzamiento3 lanzamiento3" "lanzamiento4 lanzamiento4";
-    align-items: center; } }
-
-@media (min-width: 678px) and (max-width: 750px) {
-  header .container {
-    align-items: center;
-    grid-auto-rows: auto;
-    left: 0%;
-    right: 0%; }
-  .lanzamientos {
-    grid-template-areas: "lanzamiento1 lanzamiento1" "lanzamiento2 lanzamiento2" "lanzamiento3 lanzamiento3" "lanzamiento4 lanzamiento4";
-    align-items: center; } }
-
-.medio {
-  margin: auto;
-  background-color: #09374d;
-  color: white;
-  border: solid 7px black; }
-
-.pie {
-  display: grid;
-  margin: 0;
-  grid-auto-columns: 1fr 1fr;
-  grid-template-columns: 250px 250px;
-  justify-content: space-evenly;
-  align-content: stretch;
-  justify-items: stretch;
-  align-items: stretch;
-  gap: 10px;
-  row-gap: 50px;
-  background-color: #020024;
-  position: relative;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "mediosPago" "redes"; }
-
-.mediosPago {
-  text-align: center;
-  height: 80%;
-  width: 90%;
-  margin-top: 8%;
-  border-radius: 10px;
-  padding: 8px;
-  margin-bottom: 5px;
-  background-color: #406882;
-  border: solid 3px black;
-  position: relative;
-  right: 10%; }
-
-.negrita {
-  font-weight: bold;
-  color: #38a1a8; }
-
-.redes {
-  text-align: center;
-  display: inline-block;
-  height: 80%;
-  width: 90%;
-  background-color: #406882;
-  border: solid 3px black;
-  border-radius: 10px;
-  padding: 2px;
-  margin-bottom: 5px;
-  margin-top: 8%;
-  position: relative;
-  left: 10%; }
-
-footer img {
-  margin-top: 10px; }
-
-.cuadro {
-  height: 200px;
-  width: 200px;
-  margin: 10px;
-  border: solid 3px black;
-  overflow: visible; }
-
-@media screen and (max-width: 677px) {
-  .pie {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; } }
-
-.pie {
-  align-content: center;
-  justify-content: center; }
-
 * {
   margin: 0;
   padding: 0;
@@ -274,28 +8,6 @@ body {
   background-image: url(https://img.freepik.com/vector-gratis/diseno-fondo-blanco-estilo-perspectiva-3d-forma-hexagonal_1017-27558.jpg?size=626&ext=jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-
-.espacio {
-  margin-top: 3%;
-  text-decoration: overline #1e1e39;
-  font-style: serif;
-  font-size: 2.5em;
-  overflow: hidden; }
-
-.presentacion {
-  margin: 1.5%;
-  font-size: 1.1em; }
-
-.nav-item:hover {
-  background-color: lightslategray; }
-
-header .container {
-  background: white;
-  background: linear-gradient(0deg, white 30%, #03213c 100%); }
-
-.contenedor {
-  display: inline;
-  color: white; }
 
 .marca {
   color: white;
@@ -606,3 +318,269 @@ footer img {
   background-color: #1a374d;
   min-width: 100vw;
   margin-top: -10px; }
+
+.container {
+  background-color: #1a374d;
+  min-width: 100vw;
+  margin-top: -10px; }
+
+.centrado {
+  text-align: center; }
+
+.contenedor {
+  display: inline;
+  color: white; }
+
+h1 {
+  color: #120b3a;
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center; }
+
+.presentacion {
+  margin: 1.5%;
+  font-size: 1.1em; }
+
+p {
+  color: #09374d; }
+
+.espacio {
+  margin-top: 3%;
+  text-decoration: overline #1e1e39;
+  font-style: serif;
+  font-size: 2.5em;
+  overflow: hidden; }
+
+.imagenes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "imagenesA imagenesA imagenesA" "imagenesB imagenesB imagenesB" "imagenesC imagenesC imagenesC" ". .";
+  justify-items: normal;
+  align-items: stretch;
+  justify-self: center;
+  align-self: center;
+  margin: 10px; }
+  .imagenes .img:hover {
+    transform: scale(1.5);
+    transition: 0.5s; }
+  .imagenes h3 {
+    background-color: #1e1e39;
+    color: white; }
+
+.imagenesA {
+  grid: imagenesA;
+  border: #1a374d 2px solid;
+  border-radius: 3%;
+  margin: auto; }
+
+.imagenesB {
+  grid: imagenesB;
+  border: #1a374d 2px solid;
+  border-radius: 3%;
+  margin: auto;
+  margin-top: 1%; }
+
+.imagenesC {
+  grid: imagenesC;
+  border: #1a374d 2px solid;
+  border-radius: 3%;
+  margin: auto;
+  margin-top: 2%; }
+
+.lanzamientos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "lanzamiento1 lanzamiento2" "lanzamiento3 lanzamiento4" ". .";
+  justify-items: normal;
+  align-items: stretch;
+  justify-self: center;
+  align-self: center;
+  margin: 10px; }
+  .lanzamientos a {
+    display: flex;
+    align-self: center;
+    border: #1a374d 1px solid;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #1a374d;
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    margin: auto; }
+    .lanzamientos a:hover {
+      color: #3aa6c7; }
+
+.carousel-item a {
+  color: white;
+  background-color: #1e1e39;
+  text-decoration: none; }
+  .carousel-item a:hover {
+    color: cadetblue; }
+
+.carousel-inner {
+  width: 75%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  margin: auto; }
+  .carousel-inner p {
+    background-color: #1e1e39;
+    color: white; }
+
+.btn-group a {
+  background-color: #406882; }
+
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  filter: invert(100%); }
+
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  flex-direction: row;
+  filter: invert(100%); }
+
+@media screen and (max-width: 677px) {
+  * {
+    overflow-x: hidden; }
+  .lanzamientos {
+    grid-template-areas: "lanzamiento1 lanzamiento1" "lanzamiento2 lanzamiento2" "lanzamiento3 lanzamiento3" "lanzamiento4 lanzamiento4";
+    align-items: center; } }
+
+@media (min-width: 678px) and (max-width: 750px) {
+  header .container {
+    align-items: center;
+    grid-auto-rows: auto;
+    left: 0%;
+    right: 0%; }
+  .lanzamientos {
+    grid-template-areas: "lanzamiento1 lanzamiento1" "lanzamiento2 lanzamiento2" "lanzamiento3 lanzamiento3" "lanzamiento4 lanzamiento4";
+    align-items: center; } }
+
+header .container {
+  background: white;
+  background: linear-gradient(0deg, white 30%, #03213c 100%); }
+
+.espacio {
+  margin-top: 3%;
+  text-decoration: overline #1e1e39;
+  font-style: serif;
+  font-size: 2.5em;
+  overflow: hidden; }
+
+.presentacion {
+  margin: 1.5%;
+  font-size: 1.1em; }
+
+.nav-item:hover {
+  background-color: lightslategray; }
+
+.medio {
+  margin: auto;
+  background-color: #09374d;
+  color: white;
+  border: solid 7px black; }
+
+.pie {
+  display: grid;
+  margin: 0;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-columns: 250px 250px;
+  justify-content: space-evenly;
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 10px;
+  row-gap: 50px;
+  background-color: #020024;
+  position: relative;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "mediosPago" "redes"; }
+
+.mediosPago {
+  text-align: center;
+  height: 80%;
+  width: 90%;
+  margin-top: 8%;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #406882;
+  border: solid 3px black;
+  position: relative;
+  right: 10%; }
+
+.negrita {
+  font-weight: bold;
+  color: #38a1a8; }
+
+.redes {
+  text-align: center;
+  display: inline-block;
+  height: 80%;
+  width: 90%;
+  background-color: #406882;
+  border: solid 3px black;
+  border-radius: 10px;
+  padding: 2px;
+  margin-bottom: 5px;
+  margin-top: 8%;
+  position: relative;
+  left: 10%; }
+
+footer img {
+  margin-top: 10px; }
+
+.cuadro {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border: solid 3px black;
+  overflow: visible; }
+
+@media screen and (max-width: 677px) {
+  .pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; } }
+
+.pie {
+  align-content: center;
+  justify-content: center; }
