@@ -78,11 +78,45 @@ footer img {
     align-items: center;
     flex-wrap: wrap;
   }
+
+  .mediosPago {
+    height: 70%;
+    width: 50%;
+    right: 0%;
+  }
+
+  .redes {
+    height: 70%;
+    width: 50%;
+    left: 0%;
+  }
 }
 
 @media (min-width: 678px) and (max-width: 750px) {
-}
-.pie {
-  align-content: center;
-  justify-content: center;
+  
+  .redes {
+    width: 60%;
+    margin: 5%;
+    left: 13%;
+    margin-top: 1%;
+    grid-area: redes;
+  }
+
+  .mediosPago {
+    width: 60%;
+    margin: 5%;
+    left: 13%;
+    grid-area: mediosPago;
+  }
+
+  .pie {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "mediosPago"
+      "redes";
+  }
 }
