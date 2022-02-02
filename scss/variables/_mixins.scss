@@ -1,0 +1,23 @@
+@mixin tarjeta ($fondo){
+    background-color: $fondo;
+    width: 350px;
+    height: 350px;
+    margin: 2rem;
+    padding: 10px;
+    img{
+        width: 175px;
+        margin: 0 auto;
+    }
+}
+
+.mixins{
+    .tarjeta-1{
+        @include tarjeta($color4);
+    }
+    .tarjeta-2{
+        @include tarjeta($color2);
+    }
+    .tarjeta-3{
+        @include tarjeta($color3);
+    }
+}

@@ -1,0 +1,12 @@
+$textoResaltado: (
+    primero: black,
+    segundo: red,
+);
+
+@each $frases, $color in $textoResaltado {
+    .#{$frases} {
+        color: $color;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

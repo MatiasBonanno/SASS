@@ -1,3 +1,8 @@
+main{
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   background-color: $color4;
   min-width: 100vw;
@@ -10,6 +15,13 @@
 
 .contenedor {
   display: inline;
+  color: white;
+}
+
+.banner {
+  background-color: $color3;
+  padding: 1.5rem;
+  margin: 2rem auto;
   color: white;
 }
 
@@ -26,65 +38,17 @@ h1 {
 }
 
 p {
-  color: rgb(9, 55, 77);
+  color: $color2;
 }
 
 .espacio {
   margin-top: 3%;
-  text-decoration: overline #1e1e39;
+  text-decoration: overline $color3;
   font-style: serif;
   font-size: 2.5em;
   overflow: hidden;
 }
 
-// IMAGENES //
-.imagenes {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
-  grid-template-areas:
-    "imagenesA imagenesA imagenesA"
-    "imagenesB imagenesB imagenesB"
-    "imagenesC imagenesC imagenesC"
-    ". .";
-  justify-items: normal;
-  align-items: stretch;
-  justify-self: center;
-  align-self: center;
-  margin: 10px;
-  .img:hover {
-    transform: scale(1.5);
-    transition: 0.5s;
-  }
-  h3 {
-    background-color: $color3;
-    color: white;
-  }
-}
-
-.imagenesA {
-  grid: imagenesA;
-  border: $color4 2px solid;
-  border-radius: 3%;
-  margin: auto;
-}
-
-.imagenesB {
-  grid: imagenesB;
-  border: $color4 2px solid;
-  border-radius: 3%;
-  margin: auto;
-  margin-top: 1%;
-}
-
-.imagenesC {
-  grid: imagenesC;
-  border: $color4 2px solid;
-  border-radius: 3%;
-  margin: auto;
-  margin-top: 2%;
-}
 
 .lanzamientos {
   display: grid;
@@ -115,7 +79,7 @@ p {
     align-content: space-around;
     margin: auto;
     &:hover {
-      color: rgb(58, 166, 199);
+      color: $celeste;
     }
   }
 }
@@ -144,7 +108,7 @@ p {
 }
 
 .btn-group a {
-  background-color: #406882;
+  background-color: $color5;
 }
 
 .carousel-control-next {
