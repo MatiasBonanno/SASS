@@ -1,5 +1,5 @@
 header {
-  .container {
+  .container-fluid {
     background: rgb(255, 255, 255);
     background: linear-gradient(
       0deg,
@@ -7,6 +7,11 @@ header {
       rgba(3, 33, 60, 1) 100%
     );
   }
+}
+
+.navbar{
+  margin: 0px;
+  padding: 0px;
 }
 
 .espacio {
