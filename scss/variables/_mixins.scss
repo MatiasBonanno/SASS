@@ -1,23 +1,27 @@
-@mixin tarjeta ($fondo){
-    background-color: $fondo;
+@mixin tarjeta ($texto){
+    background-color: rgb(241, 241, 241);
     width: 350px;
-    height: 350px;
-    margin: 2rem;
+    height: 400px;
+    margin: 1rem;
     padding: 10px;
+    p{
+        color: $texto;
+    }
+    
     img{
-        width: 175px;
+        width: 195px;
         margin: 0 auto;
     }
 }
 
 .mixins{
     .tarjeta-1{
-        @include tarjeta($color4);
+        @include tarjeta(rgb(133, 52, 52));
     }
     .tarjeta-2{
-        @include tarjeta($color2);
+        @include tarjeta(rgb(21, 21, 168));
     }
     .tarjeta-3{
-        @include tarjeta($color3);
+        @include tarjeta(red);
     }
 }

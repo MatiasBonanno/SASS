@@ -9,16 +9,15 @@
   display: grid;
   margin: 0;
   grid-auto-columns: 1fr 1fr;
-  grid-template-columns: 250px 250px;
-  justify-content: space-evenly;
+  grid-template-columns: 280px 280px;
+  justify-content: space-around;
   align-content: stretch;
-  justify-items: stretch;
+  justify-items: center;
   align-items: stretch;
   gap: 10px;
   row-gap: 50px;
   background-color: rgba(2, 0, 36, 1);
   position: relative;
-  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "mediosPago"
     "redes";

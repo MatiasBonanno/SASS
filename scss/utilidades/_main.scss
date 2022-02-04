@@ -69,6 +69,15 @@ p {
   }
 }
 
+.row h2{
+  background-color: $color5;
+  color: #fff;
+  margin-left: 5px;
+  margin-top: 15px;
+  height: 2.2rem;
+  width: 64rem;
+}
+// CARRUSEL
 .carousel-inner{
   width: 75%;
   height: 30%;
@@ -129,3 +138,8 @@ p {
   .carousel-control-next{
   filter: invert(100%);
   }
+
+// IMAGENES INDUMENTARIA
+.row{
+ justify-content: center;
+}
