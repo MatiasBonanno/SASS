@@ -33,7 +33,7 @@ p {
 }
 
 .banner {
-  background-color: #1e1e39;
+  background-color: $color3;
   padding: 1.5rem;
   margin: 2rem auto;
   color: white;
@@ -47,7 +47,7 @@ p {
 
 .form {
   width: 75%;
-  background-color: #1a374d;
+  background-color: $color4;
   margin: 3rem auto;
   padding: 1.5rem 1rem;
   border-radius: 0.5rem;
@@ -92,7 +92,7 @@ p {
   }
   
   .btn-group a{
-  background-color:#406882
+  background-color: $color5;
   }
   
   .carousel-control-next{
