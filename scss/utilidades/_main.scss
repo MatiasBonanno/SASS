@@ -17,6 +17,7 @@ p {
 .cuadroColor {
   color: white;
   border: solid black 1px;
+  border-radius: 5%;
   height: 25%;
   width: 90%;
   background-color: $color2;
@@ -36,6 +37,21 @@ p {
   background-color: $color3;
   padding: 1.5rem;
   margin: 2rem auto;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #dee6f2;
+  background-color: $color3;
+}
+
+.accordion-button{
+  color: white;
+  background-color: $color3
+}
+
+.accordion-collapse{
+  background-color: #406882;
   color: white;
 }
 

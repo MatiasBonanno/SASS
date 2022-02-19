@@ -46,6 +46,7 @@ p {
 .cuadroColor {
   color: white;
   border: solid black 1px;
+  border-radius: 5%;
   height: 25%;
   width: 90%;
   background-color: #09374d;
@@ -62,6 +63,18 @@ p {
   background-color: #1e1e39;
   padding: 1.5rem;
   margin: 2rem auto;
+  color: white; }
+
+.accordion-button:not(.collapsed) {
+  color: #dee6f2;
+  background-color: #1e1e39; }
+
+.accordion-button {
+  color: white;
+  background-color: #1e1e39; }
+
+.accordion-collapse {
+  background-color: #406882;
   color: white; }
 
 .formTitulo {
@@ -250,7 +263,8 @@ footer img {
     justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "mediosPago" "redes"; } }
+    grid-template-areas: "mediosPago" "redes";
+    justify-items: stretch; } }
 
 .mixins .tarjeta-1 {
   background-color: #f1f1f1;
